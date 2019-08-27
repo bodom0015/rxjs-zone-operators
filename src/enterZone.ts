@@ -1,6 +1,4 @@
-import { Operator } from 'rxjs/Operator';
-import { Subscriber } from 'rxjs/Subscriber';
-import { Observable } from 'rxjs/Observable';
+import { Operator, Observable, Subscriber } from 'rxjs';
 
 export interface EnterZoneSignature<T> {
   (zone: { run: (fn: any) => any }): Observable<T>;
