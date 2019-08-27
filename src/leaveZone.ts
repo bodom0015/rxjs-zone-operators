@@ -1,6 +1,4 @@
-import { Operator } from 'rxjs/Operator';
-import { Subscriber } from 'rxjs/Subscriber';
-import { Observable } from 'rxjs/Observable';
+import { Operator, Subscriber, Observable } from 'rxjs';
 
 export function leaveZone<T>(zone: { runOutsideAngular: (fn: any) => any }): Observable<T> {
   return this.lift(new LeaveZoneOperator(zone));
