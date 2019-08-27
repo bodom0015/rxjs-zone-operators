@@ -28,7 +28,7 @@ class LeaveZoneSubscriber<T> extends Subscriber<T> {
 
 Observable.prototype.leaveZone = leaveZone;
 
-declare module 'rxjs/Observable' {
+declare module 'rxjs' {
   interface Observable<T> {
     leaveZone: LeaveZoneSignature<T>;
   }
