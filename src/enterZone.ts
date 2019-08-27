@@ -28,7 +28,7 @@ class EnterZoneSubscriber<T> extends Subscriber<T> {
 
 Observable.prototype.enterZone = enterZone;
 
-declare module 'rxjs/Observable' {
+declare module 'rxjs' {
   interface Observable<T> {
     enterZone: EnterZoneSignature<T>;
   }
